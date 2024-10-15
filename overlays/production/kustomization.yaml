@@ -9,5 +9,5 @@ resources:
 
 images:
   - name: quarkus
-    newName: image-registry.openshift-image-registry.svc:5000/redhat-uat/code-with-quarkus-amq
+    newName: image-registry.openshift-image-registry.svc:5000/redhat/code-with-quarkus-amq
     newTag: 1.0.0
