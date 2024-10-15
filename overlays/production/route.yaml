@@ -1,0 +1,15 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: code-with-quarkus-amq
+  labels:
+    app: code-with-quarkus-amq
+spec:
+  host: code-with-quarkus-amq-uat.apps.ocptest.tpsv.cl
+  to:
+    kind: Service
+    name: code-with-quarkus-amq
+    weight: 100
+  tls:
+    termination: edge
+  wildcardPolicy: None
